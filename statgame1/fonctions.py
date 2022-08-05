@@ -6,8 +6,7 @@ Created on Sun Jan  9 22:01:17 2022
 """
 import csv
 import random
-import smtplib, requests
-from email.mime.text import MIMEText as mt
+import requests
 from bs4 import BeautifulSoup
 
 debug = False
@@ -18,25 +17,7 @@ def initialise(ini):
     debug = ini
 
 
-def sendmail(prono):
-    combinaison = " ".join(prono[0:5])
-    chance = prono[5]
-    combi = combinaison + "  " + chance + "."
-    mess = f"Bonjour, voici la combinaison que nous pouvons vous proposer {combinaison} numéro chance: {chance}. Cette proposition n'est qu'expérimentale."
-    message = combi + "  " \
-              + mess
-    msg = mt(message, 'plain', 'utf-8')
-    msg['From'] = 'matrail72@gmail.com'
-    msg['To'] = 'hyvon.ophelie@orange.fr'
-    msg['Subject'] = 'Combinaison du loto pour ma chérie'
-    email_receiver = ['matrail72@gmail.com', 'hyvon.ophelie@orange.fr']
-    mailserver = smtplib.SMTP('smtp.gmail.com', 587)
-    mailserver.ehlo()
-    mailserver.starttls()
-    mailserver.ehlo()
-    mailserver.login('matrail72@gmail.com', '328860g01')
-    mailserver.sendmail('matrail72@gmail.com', email_receiver, msg.as_string())
-    mailserver.quit()
+
 
 
 def annonciateur(dernier_tirage, liste_des_plus_annonciateurs, liste_globale):

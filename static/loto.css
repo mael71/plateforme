@@ -1,0 +1,108 @@
+.ball
+{
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    font-family: Metropolis-Bold,sans-serif;
+    font-weight: 400;
+    width: 50px;
+    height: 50px;
+    }
+
+.chance
+{
+    background-color: green;
+    margin-left: 25px
+    }
+
+
+li {
+    display : inline-flex;
+    margin-right: 5px;
+}
+body{
+    background: white url("/static/bg.jpg") 50%  no-repeat;
+    height: 650px;
+    padding: 250px 0 0 0;
+    font: 1.2em "Fira Sans", sans-serif;
+    text-align: center;
+    }
+
+.result-full_tab-item{
+    background: yellow;
+    padding: 20px;
+}
+
+.importval{
+background: yellow;
+text-align: center;
+}
+
+.result_full_drawing{
+    background: white;
+    text-align: center;
+
+}
+result-full_drawing-content{
+    padding : 0px;
+}
+
+.result-full_list {
+    flex-wrap: wrap;
+    margin: 0 0 2rem;
+}
+
+div {
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font: 25px 'Encode Sans',sans-serif;
+}
+
+.infos{
+    background: red;
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+    margin: 100px;
+
+}
+h1 {
+
+    display: block;
+    font-size: 4.5em;
+    font-weight: bold;
+    font: 35px 'Encode Sans',sans-serif;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: disc;
+    margin-block-start: 10em;
+    margin-block-end: 10em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}

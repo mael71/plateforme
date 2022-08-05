@@ -1,0 +1,90 @@
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'loto.css' %}">
+    <title>Votre combinaison</title>
+    <link type="text/css" rel="stylesheet" href="https://www.secretsdujeu.com/styles/loto.css">
+    <script type="text/javascript" src="https://www.secretsdujeu.com/scripts/loto.asp"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="large-content">
+    <section class="result-full_tab-item is-selected" data-theme="neutre">
+        <nav class="result-full_tab"></nav>
+        <div class="result-full_drawing-content">
+            <div class="result_full_drawing">
+                <h2 class="result-full_drawing-infos">Tirage du {{ date }}</h2>
+                <ul class = "result-full_list">
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ dt1 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ dt2 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ dt3 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ dt4 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                <span class="ball">{{ dt5 }}</span>
+                    </li>
+                    <li class="result_full_list_item has-logo">
+                        <span class="ball chance">{{ dt_chance }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="infos">
+    <h1>Utilité réelle des statistiques.</h1>
+    <p>
+        Les statistiques de sortie d’un ou plusieurs numéros ne permettent pas de juger de la probabilité de leur apparition au prochain tirage. En effet, un jeu comme le Loto repose sur l’équiprobabilité.
+        Chaque numéro a toujours 1 chance sur 49 (puis sur 48, 47, 46… au fil du tirage) de sortir. Soit, très exactement :
+        1/49 × 1/48 × 1/47 × 1/46 × 1/45 = 1/228 826 080
+        En théorie, une même suite de 5 numéros pourrait être dévoilée le mercredi puis le samedi. Rien ne l'empêche, sinon une probabilité extrêmement faible qui n’adviendra qu’au bout de centaines de milliards de tirages…
+        Il est donc mathématiquement impossible d’affirmer que tel numéro X a plus de chances d’être tiré que tel autre Y parce qu’il est sorti auparavant plus (ou moins) souvent.
+    </p>
+
+    </div>
+<div class="large-content">
+    <section class="result-full_tab-item is-selected" data-theme="neutre">
+        <nav class="result-full_tab"></nav>
+        <div class="result-full_drawing-content">
+            <div class="result_full_drawing">
+                <h2 class="result-full_drawing-infos">"Combinaison proposée"</h2>
+                <ul class = "result-full_list">
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ boule1 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ boule2 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ boule3 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                        <span class="ball">{{ boule4 }}</span>
+                    </li>
+                    <li class="result_full_list_item">
+                <span class="ball">{{ boule5 }}</span>
+                    </li>
+                    <li class="result_full_list_item has-logo">
+                        <span class="ball chance">{{ boule_chance }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>

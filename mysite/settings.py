@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-p*&-s$w3k5-&+g5)2!)+#6z!af)npegk=@x0g(ry!7-bkyb&!(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'mrdev71.pythonanywhere.com'
+                 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = 'django.core.context_processors.static'
 # Application definition
